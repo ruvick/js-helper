@@ -13,7 +13,7 @@ const item = document.getElementsByClassName('item'); // Получаем эле
 const item = document.getElementsByTagName('item'); // Получаем элемент по тегу
 const item = document.querySelector('#item'); // Получаем один селектор по id
 const item = document.querySelector('.item'); // Получаем первый селектор по тегу
-const item = document.querySelectorAll('.item'); // Получаем все селекторы по классу
+const item = document.querySelectorAll('.item'); // Получаем все селекторы по классу 
 // =====================================================================================
 
 
