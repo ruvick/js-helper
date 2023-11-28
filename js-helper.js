@@ -114,7 +114,22 @@ lesson.addEventListener("click", function (e) {
 		};
 	}
 })();
+//========================================================================================================================================================
+// https://youtu.be/pYu3KszRnB4?si=k_LzAdu2cOoiaZ_W
+// Функция ассинхронно через заданное время, отрисовывает часть html кода
+function asyncRender() {
+	const list = document.querySelector('.list');
+	const template = `
+	<li class="list__item"></li>
+	<li class="list__item"></li>
+	<li class="list__item"></li>
+	<li class="list__item"></li>
+	<li class="list__item"></li>
+	`;
 
+	setTimeout(() => list.innerHtml = template, 200);
+}
+asyncRender();
 
 // Скрипт для отложенной загрузки
 document.addEventListener('DOMContentLoaded', () => {
