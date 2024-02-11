@@ -116,6 +116,16 @@ lesson.addEventListener("click", function (e) {
 	}
 })();
 //========================================================================================================================================================
+
+// Обращение к элементу через document
+if (document.querySelector('.filter-catalog__title')) {
+	document.querySelector('.filter-catalog__title').addEventListener("click", function (e) {
+		if (window.innerWidth < 992) {
+			document.querySelector('.filter-catalog__items').classList.toggle('._active');
+		}
+	});
+}
+//========================================================================================================================================================
 // https://youtu.be/pYu3KszRnB4?si=k_LzAdu2cOoiaZ_W
 // Функция ассинхронно через заданное время, отрисовывает часть html кода
 function asyncRender() {
